@@ -207,8 +207,13 @@ void cheapStrings()
 //  defined in the insultStrings.h file based on the value calculated above.
 void valueStrings(byte stringSelect)
 {
+  // The actual read-string-write-output procedure is the same for all three
+  //  tiers of insult; create a RAM buffer for the insult.
   char buffer[150];
+  // strcpy_P() is a special AVR-GCC function which copies a string from a
+  //  flash-memory location to a RAM location.
   strcpy_P(buffer, (char*)pgm_read_word(&(valueStringList[stringSelect])));
+  // Print the buffer out
   printerOutput.println(buffer);
 }
 
@@ -226,7 +231,7 @@ void luxuryStrings(byte stringSelect)
   printerOutput.println(buffer);
 }
 
-// Feed out an inch or so of paper, so the "receipt" is of a fair size.
+// Feed out an inch or so of paper, so the "receipt" is of a fair size. Note
 void feed()
 {
   printerOutput.print("\n\n\n\n");
