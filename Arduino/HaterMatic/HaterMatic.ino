@@ -11,7 +11,7 @@ directed at them.
 
 Resources:
 SoftwareSerial library
-avr/pgmspace.h
+avr/pgmspace.h    
 
 Development environment specifics:
 Developed in Arduino 1.0.5
