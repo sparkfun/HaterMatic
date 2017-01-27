@@ -41,7 +41,7 @@ Distributed as-is; no warranty is given.
 // These are pin redefinitions.
 #define COIN_INPUT 7  // Serial (or pulse) input from the coin acceptor.
 #define PRINTER_OUTPUT 8 // Serial output to printer
-#define GET_INSULT A0 // Pushbutton input from insult request button.
+#define GET_LOVE A0 // Pushbutton input from insult request button.
 #define INHIBIT 9     // Reject any further coins inserted
 
 // Instantiate a software serial port on pins COIN_INPUT and PRINTER_OUTPUT.
