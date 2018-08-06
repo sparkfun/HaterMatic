@@ -1,7 +1,9 @@
 HaterMatic
 ==========
 
-The HaterMatic is a coin-operated insult dispensing machine. It sells harsh language to you, with higher quality and more original insults coming from higher prices.
+[![Hatermatic](https://cdn.sparkfun.com/r/500-500/assets/home_page_posts/1/4/2/1/Hater-Matic_CoinOperatedPrinter_Arduino.jpg)](https://cdn.sparkfun.com/assets/home_page_posts/1/4/2/1/Hater-Matic_CoinOperatedPrinter_Arduino.jpg)
+
+The HaterMatic project is a coin-operated insult dispensing machine. It sells harsh language to you, with higher quality and more original insults coming from higher prices.
 
 ### The Hardware
 
