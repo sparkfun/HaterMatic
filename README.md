@@ -19,5 +19,5 @@ Documentation
 --------------
 
 * **[Hookup Guide](https://github.com/sparkfun/HaterMatic/wiki)** - For more information, please check the Wiki for this repository.
-* **[Hatermatic](https://www.sparkfun.com/news/1421)**
+* **[SparkFun Live: Coin-operated Insult Generator - Hatermatic](https://www.sparkfun.com/news/1421)**
 * **[Enginursday: The LoverMatic](https://www.sparkfun.com/news/2286)**
