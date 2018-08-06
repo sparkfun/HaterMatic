@@ -13,4 +13,4 @@ The HaterMatic is powered by a SparkFun Arduino Pro Mini 5V, although any Arduin
 
 The firmware for the HaterMatic was written in Arduino 1.0.5, but it should compile and load under 1.5.3, as well. There are no special library requirements for it.
 
-#### For more information, please check the Wiki for this repository.
+#### For more information, please check the [Wiki for this repository](https://github.com/sparkfun/HaterMatic/wiki).
