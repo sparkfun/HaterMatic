@@ -4,22 +4,17 @@ Insults for the "HaterMatic" project
 Mike Hord @ SparkFun Electronics
 19 Feb 2014
 https://github.com/sparkfun/HaterMatic
-
 This code uses SparkFun's 6-value coin accecptor (COM-11636) and thermal
 printer (COM-10438) to allow people to pay to have a piece of harsh language
 directed at them. This file contains the actual insults.
-
 Resources:
 SoftwareSerial library
 avr/pgmspace.h
-
 Development environment specifics:
 Developed in Arduino 1.0.5
 Developed on a SparkFun Arduino Pro Mini 5V/16MHz (DEV-11113)
-
 This code is beerware; if you see me (or any other SparkFun employee) at the
 local, and you've found our code helpful, please buy us a round!
-
 Distributed as-is; no warranty is given.
 ******************************************************************************/
 // These define the number of insult strings for each tier. This limits the
@@ -39,7 +34,7 @@ const char vs2[] PROGMEM = "Poopy head!";
 const char vs3[] PROGMEM = "Butthead!";
 const char vs4[] PROGMEM = "Dummy.";
 
-const char *valueStringList[] PROGMEM=
+const char *const valueStringList[] PROGMEM=
 {
   vs1,
   vs2,
@@ -58,7 +53,7 @@ const char qs6[] PROGMEM = "You\'re just dumber than a bag of hammers.";
 const char qs7[] PROGMEM = "Were you always this stupid, or did you take lessons?";
 const char qs8[] PROGMEM = "You are a neo-maxi zoom dweebie.";
 
-PGM_P qualityStringList[] PROGMEM= 
+PGM_P const qualityStringList[] PROGMEM= 
 {
   qs1,
   qs2,
@@ -90,7 +85,7 @@ const char ls15[] PROGMEM = "I\'ve trained dogs with more personality than you."
 const char ls16[] PROGMEM = "If all the village idiots left their villages and formed their own village, in that village, YOU would be the village idiot.";
 const char ls17[] PROGMEM = "The YouTube comments about you are all true.";
 
-PGM_P luxuryStringList[] PROGMEM =
+PGM_P const luxuryStringList[] PROGMEM =
 {
   ls1,
   ls2,
@@ -116,7 +111,6 @@ I'm leaving this section in, but commented, because it's a useful example of
 what *not* to do. The way I've done things here, you end up with an array of
 pointers to strings stored in SRAM stored in flash, *not* an array of strings
 stored in flash. See above for the correct, albeit clumsy, way to do it.
-
 #define NUM_V 4  // Number of "value" level insults.
 PROGMEM const prog_char *valueStringList[] =
 {
@@ -125,7 +119,6 @@ PROGMEM const prog_char *valueStringList[] =
   "Butthead!",
   "Dummy."
 };
-
 #define NUM_Q 8  // Number of "quality" insults
 PROGMEM const prog_char *qualityStringList[] = 
 {
@@ -138,7 +131,6 @@ PROGMEM const prog_char *qualityStringList[] =
   "Were you always this stupid, or did you take lessons?",
   "You are a neo-maxi zoom dweebie."
 };
-
 #define NUM_L 8  // Number of "luxury" insults, for those who have everything.
 PROGMEM const prog_char *luxuryStringList[] =
 {
@@ -161,4 +153,3 @@ PROGMEM const prog_char *luxuryStringList[] =
   "The YouTube comments about you are all true."
 };
 */
-
